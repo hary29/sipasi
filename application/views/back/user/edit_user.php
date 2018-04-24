@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
-                            <h3 class="box-title m-b-0" align="center">Registrasi User</h3>
+                            <h3 class="box-title m-b-0" align="center">Edit User</h3>
                             <p class="text-muted m-b-30 font-13" align="center"> Form Registrasi </p>
                             <div class="row">
                                 <div class="col-sm-12 col-xs-12">

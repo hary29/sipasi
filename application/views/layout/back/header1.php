@@ -13,6 +13,8 @@
     <title>Sistem Pakar Sapi</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url() ?>asset/back/baru/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>asset/back/baru/css/lib/chartist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <!-- Custom CSS -->
     <link href="<?php echo base_url() ?>asset/back/baru/css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>asset/back/baru/css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
@@ -50,13 +52,13 @@
                     </a>
                 </div>
                 <!-- End Logo -->
-                <div class="navbar-collapse">
+               <div class="navbar-collapse">
                     <!-- toggle and nav items -->
                     <ul class="navbar-nav mr-auto mt-md-0">
                         <!-- This is  -->
                         <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
                         <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                        <!-- Messages -->
+
                         <li class="nav-item dropdown mega-dropdown"> <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th-large"></i></a>
                             <div class="dropdown-menu animated zoomIn">
                                 <ul class="mega-dropdown-menu row">
@@ -76,9 +78,9 @@
                                             <button type="submit" class="btn btn-info">Submit</button>
                                         </form>
                                     </li> -->
-                                    <li class="col-lg-3 col-xlg-3 m-b-30">
+                                    <!-- <li class="col-lg-3 col-xlg-3 m-b-30">
                                         <h4 class="m-b-20">List style</h4>
-                                        <!-- List style -->
+                                        List style
                                         <ul class="list-style-none">
                                             <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
                                             <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
@@ -89,7 +91,7 @@
                                     </li>
                                     <li class="col-lg-3 col-xlg-3 m-b-30">
                                         <h4 class="m-b-20">List style</h4>
-                                        <!-- List style -->
+                                        List style
                                         <ul class="list-style-none">
                                             <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
                                             <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
@@ -100,7 +102,7 @@
                                     </li>
                                     <li class="col-lg-3 col-xlg-3 m-b-30">
                                         <h4 class="m-b-20">List style</h4>
-                                        <!-- List style -->
+                                        List style
                                         <ul class="list-style-none">
                                             <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
                                             <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
@@ -108,7 +110,7 @@
                                             <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
                                             <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> This Is Another Link</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </li>
