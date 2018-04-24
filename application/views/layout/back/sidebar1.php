@@ -7,30 +7,30 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-primary pull-right">2</span></span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Ecommerce </a></li>
-                                <li><a href="index1.html">Analytics </a></li>
-                            </ul>
+                        <li> <a class="has-arrow  " href="<?php echo base_url() ?>back/home_back" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-primary pull-right"></span></span></a>
+                           <!--  <ul aria-expanded="false" class="collapse">
+                               <li><a href="index.html">Ecommerce </a></li>
+                               <li><a href="index1.html">Analytics </a></li>
+                           </ul> -->
                         </li>
                         <li class="nav-label">Apps</li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-envelope"></i><span class="hide-menu">Email</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">user</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="email-compose.html">Compose</a></li>
-                                <li><a href="email-read.html">Read</a></li>
-                                <li><a href="email-inbox.html">Inbox</a></li>
+                                <li><a href="<?php echo base_url() ?>back/user"><i class="ti-user"></i> My Profile</a></li>
+                          <!--   <li><a href="javascript:void(0)"><i class="ti-email"></i> Inbox</a></li> -->
+                            <li><a href="<?php echo base_url() ?>back/user/edit"><i class="ti-settings"></i> Account Setting</a></li>
+                            <li><a href="<?php echo base_url() ?>front/Log/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bar-chart"></i><span class="hide-menu">Charts</span></a>
+                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bar-note"></i><span class="hide-menu">Registrasi</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="chart-flot.html">Flot</a></li>
-                                <li><a href="chart-morris.html">Morris</a></li>
-                                <li><a href="chart-chartjs.html">ChartJs</a></li>
-                                <li><a href="chart-chartist.html">Chartist </a></li>
-                                <li><a href="chart-amchart.html">AmChart</a></li>
-                                <li><a href="chart-echart.html">EChart</a></li>
-                                <li><a href="chart-sparkline.html">Sparkline</a></li>
-                                <li><a href="chart-peity.html">Peity</a></li>
+                                 <li> <a href="<?php echo base_url() ?>back/register/register_user">Register User</a> </li>
+                            <li> <a href="<?php echo base_url() ?>back/register">Register Sapi</a> </li>
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bar-chart"></i><span class="hide-menu">Pemeriksaan</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li> <a href="<?php echo base_url() ?>back/pemeriksaan">pemeriksaan sapi</a> </li>
                             </ul>
                         </li>
                         <li class="nav-label">Features</li>
