@@ -4,6 +4,8 @@ class Gejala extends CI_Controller {
 	
 	public function __construct()	{
 		parent::__construct();
+		$this->load->library('session');
+		$this->simple_login->cek_login();
 		$this->load->model('m_gejala');
 		$this->load->helper('form');
 		$this->load->library('pagination');

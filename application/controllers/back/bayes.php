@@ -4,6 +4,8 @@ class Bayes extends CI_Controller {
 	
 	public function __construct()	{
 		parent::__construct();
+		$this->load->library('session');
+		$this->simple_login->cek_login();
 		$this->load->model('m_bayes');
 		//$this->load->model('m_search');
 		$this->load->helper('form');
