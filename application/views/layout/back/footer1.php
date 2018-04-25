@@ -42,6 +42,8 @@
     <!-- scripit init-->
 
     <script src="<?php echo base_url() ?>asset/back/baru/js/custom.min.js"></script>
+    <script src="<?php echo base_url() ?>asset/back/baru/js/sidebarmenu.js"></script>
+    <script src="<?php echo base_url() ?>asset/back/baru/js/jquery.slimscroll.js"></script>
     
 
 </body>

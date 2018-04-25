@@ -43,9 +43,9 @@ public function __construct()	{
         }
         $data['kode'] = $kode1;
 		//$this->load->view('welcome_message');
-		$this->load->view('layout/front/header');
+		//$this->load->view('layout/front/header');
 		$this->load->view('front/register',$data);
-		$this->load->view('layout/front/footer');
+		//$this->load->view('layout/front/footer');
 
 	}
 	public function tambah_aksi()

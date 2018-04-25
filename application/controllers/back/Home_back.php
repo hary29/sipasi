@@ -47,7 +47,7 @@ class Home_back extends CI_Controller {
 	else {
 		$data['gejala']=$this->m_gejala->jumlah_gejala();
 		$id= $this->session->userdata('id'); 
-		$data['sapi']=$this->m_anjing->jumlah_sapi_user($id);
+		$data['sapi']=$this->m_sapi->jumlah_sapi_user($id);
 		$data['diagnosa']=$this->m_pemeriksaan->jumlah_diagnosa_user($id);
 		$data['perpenyakit']=$this->m_pemeriksaan->hitung_perpenyakit_user($id);
 		//$data['perlevel']=$this->m_user->hitung_perlevel();
