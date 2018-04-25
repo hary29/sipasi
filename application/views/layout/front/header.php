@@ -71,7 +71,7 @@
 														<div class="visible-lg">
 																<ul id="hornavmenu" class="nav navbar-nav">
 																		<li>
-																				<a href="<?php echo base_url() ?>welcome" class="fa-home active">Home</a>
+																				<a href="<?php echo base_url() ?>welcome" class="fa-home">Home</a>
 																		</li>
 																		<!-- <li>
 																				<span class="fa-gears ">Features</span>

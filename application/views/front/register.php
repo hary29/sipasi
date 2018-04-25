@@ -2,11 +2,11 @@
 						<div id="content">
 								<div class="container background-white">
 									 <?php 
-  if ($this->session->flashdata('sukses')) {
-    echo '<p class="warning" style="margin: 10px 20px;">'.$this->session->flashdata('sukses').'</p>';
-  }
-  echo validation_errors('<p class="warning" style="margin: 10px 20px;">','</p>');
-   ?>
+	if ($this->session->flashdata('sukses')) {
+		echo '<p class="warning" style="margin: 10px 20px;">'.$this->session->flashdata('sukses').'</p>';
+	}
+	echo validation_errors('<p class="warning" style="margin: 10px 20px;">','</p>');
+	 ?>
 										<div class="row margin-vert-30">
 												<!-- Register Box -->
 												<div class="col-md-6 col-md-offset-3 col-sm-offset-3">
@@ -15,7 +15,7 @@
 																<div class="signup-header">
 																		<h2>Register a new account</h2>
 																		<p>Already a member? Click
-																				<a href="#">HERE</a>to login to your account.</p>
+																				<a href="<?php echo base_url() ?>front/log"> HERE </a>to login to your account.</p>
 																</div>
 																<div class="row">
 																<label>Kode registrasi
@@ -71,4 +71,5 @@
 										</div>
 								</div>
 						</div>
+				</div></div></div></div>
 						<!-- === END CONTENT === -->
