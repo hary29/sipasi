@@ -1,145 +1,130 @@
-script-nav -->	
-			        <script>
-					$("span.menu-info").click(function(){
-						$("ul.cl-effect-21").slideToggle("slow" , function(){
-						});
-					});
-					</script>
-					<!-- /script-nav -->
-                    <div class="clearfix"> </div>	
-		   </div>
-  </div>
-<!--/header-->
-<!--about-->
-<div class="about">
-	<div class="container">
-				<div class="about-top">
-					<div class="about-top-info">
-							<h3>Tentang Penyakit</h3>
-							<h4> berikut definisi  singkat dari beberapa penyakit yang digunakan dalam sistem pakar ini </h4><br>
-							<div class="col-md-4 about-img">
-								<img src="<?php echo base_url() ?>asset/front/images/pic8.jpg" alt=""/>
-							</div>
-							<div class="col-md-8 about-desc">
-
-								<div class="row">
-                    <div class="col-sm-12">
-                        <div class="white-box">
-                             <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-bordered table-striped">
-                    
-                    <tr class="active">
-                     
-                      <th width="5%" scope="col">Nama Penyakit</th>
-                      <th width="5%" scope="col">Definisi</th>
-                      
-                    </tr>
-                    <?php 
+<div id="content">
+				<div class="container background-white">
+					<div class="row margin-vert-30">
+						<!-- Main Column -->
+						<div class="col-md-9">
+							<!-- Blog Post -->
+							<?php 
                      
                     foreach($penyakit as $list) { ?>
-                    <tr>
-                      
-                      <td><?php echo $list['nama_penyakit']; ?></td>
-                      <td><?php echo $list['definisi']; ?></td>
-                      
-                    </tr>
-                    <?php } ?>
-                    <?php echo $this->session->flashdata('pesan'); ?>
-                    
-                    
-                  </table>
-                  
-                                  </div>
-                                 
-                              </div>
-								<!-- <a class="about-desc-button" href="#">READ MORE</a> -->
+							<div class="blog-post padding-bottom-20">
+								<!-- Blog Item Header -->
+								<div class="blog-item-header">
+									<!-- Title -->
+									<h2>
+										<a href="#">
+											<?php echo $list['nama_penyakit']; ?></a>
+									</h2>
+									<div class="clearfix"></div>
+									<!-- End Title -->
+									<!-- Date -->
+									<div class="blog-post-date">
+										<a href="#">22nd Apr, 2014</a>
+									</div>
+									<!-- End Date -->
+								</div>
+								<!-- End Blog Item Header -->
+								<!-- Blog Item Details -->
+								<div class="blog-post-details">
+									<!-- Author Name -->
+									<div class="blog-post-details-item blog-post-details-item-left">
+										<i class="fa fa-user color-gray-light"></i>
+										<a href="#">Admin</a>
+									</div>
+									<!-- End Author Name -->
+									<!-- Tags -->
+									<div class="blog-post-details-item blog-post-details-item-left blog-post-details-tags">
+										<i class="fa fa-tag color-gray-light"></i>
+										<a href="#">Sistem Pakar</a>,
+										<a href="#">Sapi</a>,
+										<a href="#">Teorema Bayes</a>
+										<a href="#">forward Chaing</a>
+									</div>
+									<!-- End Tags -->
+									<!-- # of Comments -->
+									<!-- <div class="blog-post-details-item blog-post-details-item-left blog-post-details-item-last">
+										<a href="">
+											<i class="fa fa-comments color-gray-light"></i>
+											2 Comments
+										</a>
+									</div> -->
+									<!-- End # of Comments -->
+								</div>
+								<!-- End Blog Item Details -->
+								<!-- Blog Item Body -->
+								<div class="blog">
+									<div class="clearfix"></div>
+									<div class="blog-post-body row margin-top-15">
+										<div class="col-md-5">
+											<img class="margin-bottom-20" src="assets/img/blog/image1.jpg" alt="thumb1">
+										</div>
+										<div class="col-md-7">
+											<p><?php echo $list['definisi']; ?></p>
+											<!-- Read More -->
+											<a href="#" class="btn btn-primary">
+												Read More
+												<i class="icon-chevron-right readmore-icon"></i>
+											</a>
+											<!-- End Read More -->
+										</div>
+									</div>
+								</div>
+								<!-- End Blog Item Body -->
+							</div><?php } ?>
+						</div>
+							<!-- End Blog Item -->
+						<!-- End Main Column -->
+						<!-- Side Column -->
+						<div class="col-md-3">
+							<!-- Blog Tags -->
+							<div class="blog-tags">
+								<h3>Tags</h3>
+								<ul class="blog-tags">
+									<li>
+										<a href="#" class="blog-tag">Sistem Pakar</a>
+									</li>
+									<li>
+										<a href="#" class="blog-tag">Penyakit</a>
+									</li>
+									<li>
+										<a href="#" class="blog-tag">Sapi</a>
+									</li>
+									<li>
+										<a href="#" class="blog-tag">Teorema Bayes</a>
+									</li>
+									<li>
+										<a href="#" class="blog-tag">Forward chaining</a>
+									</li>
+								</ul>
 							</div>
-							<div class="clearfix"> </div>
-					</div>
-			</div>
-			<!-- <div class="about-bottom">
-						<div class="about-topgrid1">
-							<h3>Who We Are</h3>
-					<div class="col-md-8 about-bottom-info">
-							   <h5>LOREM IPM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM.</h5>
-							   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris..</p>
-							   <a class="about-bottom-info-button" href="#">READ MORE</a>
-					</div>
-						<div class="col-md-4 about-bottom-info-right">
-						 <img src="<?php echo base_url() ?>asset/front/images/pic9.jpg" alt="" />
-						 </div>
-						 <div class="clearfix"> </div>
-					</div>
-					</div> -->
-					 <div class="clearfix"> </div>
-		</div>
-</div>
-<div class="aboutus">
-			<div class="container">
-		<div class="about-bottom-info">
-	<div class="col-md-4 about-left">
-		<div class="col-md-4 check-in">
-			<img src="<?php echo base_url() ?>asset/front/images/dg-6.png" alt=""/>
-		</div>
-		<div class="col-md-8 check-out">
-			<p>Mauris fermentum dictum magna
-			sed laoreet aliquam leo ut tellus</p>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<div class="col-md-4 about-left">
-		<div class="col-md-4 check-in">
-			<img src="<?php echo base_url() ?>asset/front/images/dg-5.png" alt=""/>
-		</div>
-		<div class="col-md-8 check-out">
-			<p>Mauris fermentum dictum magna
-			sed laoreet aliquam leo ut tellus</p>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<div class="col-md-4 about-left">
-		<div class="col-md-4 check-in">
-			<img src="<?php echo base_url() ?>asset/front/images/dg-4.png" alt=""/>
-		</div>
-		<div class="col-md-8 check-out">
-			<p>Mauris fermentum dictum magna
-			sed laoreet aliquam leo ut tellus</p>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-		<div class="col-md-4 about-left">
-		<div class="col-md-4 check-in">
-			<img src="<?php echo base_url() ?>asset/front/images/dg-3.png" alt=""/>
-		</div>
-		<div class="col-md-8 check-out">
-			<p>Mauris fermentum dictum magna
-			sed laoreet aliquam leo ut tellus</p>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-		<div class="col-md-4 about-left">
-		<div class="col-md-4 check-in">
-			<img src="<?php echo base_url() ?>asset/front/images/dg-2.png" alt=""/>
-		</div>
-		<div class="col-md-8 check-out">
-			<p>Mauris fermentum dictum magna
-			sed laoreet aliquam leo ut tellus</p>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-			<div class="col-md-4 about-left">
-		<div class="col-md-4 check-in">
-			<img src="<?php echo base_url() ?>asset/front/images/dg-1.png" alt=""/>
-		</div>
-		<div class="col-md-8 check-out">
-			<p>Mauris fermentum dictum magna
-			sed laoreet aliquam leo ut tellus</p>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<div class="clearfix"> </div>
-</div>
+							<!-- End Blog Tags -->
+							<!-- Recent Posts -->
+							<div class="recent-posts">
+								<h3>Daftar Penyakit</h3>
+								<?php 
+                    foreach($penyakit as $list) { ?>
+								<ul class="posts-list margin-top-10">
+									<li>
+										<div class="recent-post">
+											<!-- <a href="">
+												<img class="pull-left" src="assets/img/blog/thumbs/thumb1.jpg" alt="thumb1">
+											</a> -->
+											<a href="#" class="posts-list-title"><?php echo $list['nama_penyakit']; ?></a>
+											<br>
+											<span class="recent-post-date">
+												July 30, 2013
+											</span>
+										</div>
+										<div class="clearfix"></div>
+									</li>
+								</ul>
+								<?php } ?>
+							</div>
 
-	</div>
-	</div>
-</div>
-<!--/about
+							<!-- End Recent Posts -->
+						</div>
+						<!-- End Side Column -->
+					</div>
+				</div>
+			</div>
+			<!-- === END CONTENT === -->

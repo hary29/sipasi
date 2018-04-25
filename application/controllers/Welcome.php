@@ -5,6 +5,7 @@ class Welcome extends CI_Controller {
 	function __construct(){
 		parent::__construct();		
 		$this->load->library('session');
+		$this->load->model('m_penyakit');
 
 	}
 
@@ -26,8 +27,9 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
+		$data['penyakit'] = $this->m_penyakit->daftar_penyakit1();
 		$this->load->view('layout/front/header');
-		$this->load->view('front/home');
+		$this->load->view('front/home',$data);
 		$this->load->view('layout/front/footer');
 	}
 

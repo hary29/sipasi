@@ -1,91 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Login V1</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="<?php echo base_url() ?>asset/log/images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/log/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/log/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/log/vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/log/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/log/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/log/css/util.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/log/css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="<?php echo base_url() ?>asset/log/images/img-01.png" alt="IMG">
-				</div>
-			<form action="<?php echo base_url(); ?>front/log/login" class="login100-form validate-form" method="POST">
-					<span class="login100-form-title">
-						 <h3>Login</h3><br>
-						<h5> Silahkan login terlebih dahulu untuk melakukan pemeriksaan pada anjing anda. jika belum terdaftar silahkan melakukan registrasi pada menu registrasi atau <i><font color='red' > create your account </i></font> pada bagian bawah form login</h5>
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Username is required!!!">
-						<input class="input100" type="text" name="username" placeholder="Username">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
-						</span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="password" placeholder="Password">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
-					<div class="text-center p-t-13">
-						<a class="txt2" href="<?php echo base_url() ?>front/register">
-							<b>Create your Account</b>
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
-	
-
-	
-<!--===============================================================================================-->	
-	<script src="<?php echo base_url() ?>asset/log/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url() ?>asset/log/vendor/bootstrap/js/popper.js"></script>
-	<script src="<?php echo base_url() ?>asset/log/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url() ?>asset/log/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url() ?>asset/log/vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url() ?>asset/log/js/main.js"></script>
-
-</body>
-</html>
+          <div id="content">
+                <div class="container background-white">
+                    <div class="container">
+                    	<?php 
+  if ($this->session->flashdata('sukses')) {
+    echo '<p class="warning" style="margin: 10px 20px;">'.$this->session->flashdata('sukses').'</p>';
+  }
+  echo validation_errors('<p class="warning" style="margin: 10px 20px;">','</p>');
+   ?>
+                        <div class="row margin-vert-30">
+                            <!-- Login Box -->
+                            <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
+                                <form action="<?php echo base_url(); ?>front/log/login" class="login-page" method="POST">
+                                    <div class="login-header margin-bottom-30">
+                                        <h2>Login to your account</h2>
+                                    </div>
+                                    <div class="input-group margin-bottom-20">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                        <input placeholder="Username" name="username" class="form-control" type="text">
+                                    </div>
+                                    <div class="input-group margin-bottom-20">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                        <input placeholder="Password" name="password" class="form-control" type="password">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="checkbox">
+                                                <input type="checkbox">Stay signed in</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-primary pull-right" type="submit">Login</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h4>Forget your Password ?</h4>
+                                    <p>
+                                        <a href="#">Click here</a>to reset your password.</p>
+                                </form>
+                            </div>
+                            <!-- End Login Box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->

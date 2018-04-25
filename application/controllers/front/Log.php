@@ -26,9 +26,9 @@ class Log extends CI_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		//$this->load->view('layout/front/header');
-		$this->load->view('front/form_login');
-		//$this->load->view('layout/front/footer');
+		$this->load->view('layout/front/header');
+		$this->load->view('front/log');
+		$this->load->view('layout/front/footer');
 
 	}
 	function login(){

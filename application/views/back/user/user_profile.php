@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-md-12 col-xs-12">
                         <div class="white-box">
-                            <div class="user-bg" align="center"> <img width="20%"  alt="user" src="<?php echo base_url() ?>asset/back/plugins/images/users/user.png"> </div>
+                            <div class="user-bg" align="center"> <img width="20%"  alt="user" src="<?php echo base_url() ?>asset/back/baru/images/users/user.png"> </div>
                             <div class="user-btm-box">
                                 <!-- .row -->
                                  <?php 
