@@ -44,6 +44,10 @@
                                       <tbody>
                                         <tr class="odd gradeX">
                                           <?php 
+                                          if (empty($data_user)) {?>
+                            <div style="color:#0000FF"> <label for="aa" class="col-sm-4">
+                                        <h3><b>Data Penyakit Kosong</b></h3></label></div>
+                             <?php }  else {
                             $no = $offset;
                           foreach($data_user as $list) { ?>
                           <tr>
@@ -61,7 +65,7 @@
                             <?php
                         //$level=$this->session->userdata('level');
                         // if($level == 1){?>
-                            <a href="<?php echo base_url() ?>back/user/delete/<?php echo $list['id_user'] ?>"onclick="return confirm ('Apakah Anda yakin akan menghapus data ini ?')"><label class="btn btn-danger" >DELETE</a><?php } ?></td></label></a></label></a></div></td></tr>
+                            <a href="<?php echo base_url() ?>back/user/delete/<?php echo $list['id_user'] ?>"onclick="return confirm ('Apakah Anda yakin akan menghapus data ini ?')"><label class="btn btn-danger" >DELETE</a><?php } } ?></td></label></a></label></a></div></td></tr>
                           </tr>
 
                           <?php echo $this->session->flashdata('pesan'); ?>

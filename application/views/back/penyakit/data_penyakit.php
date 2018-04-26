@@ -26,8 +26,13 @@
                       <th width="5%" scope="col">Aksi</th>
                     </tr>
                     <?php 
+                     if (empty($penyakit)) {?>
+                            <div style="color:#0000FF"> <label for="aa" class="col-sm-4">
+                                        <h3><b>Data Penyakit Kosong</b></h3></label></div>
+                             <?php }  else {
                       $no = $offset;
                     foreach($penyakit as $list) { ?>
+                    	
                     <tr>
                       <td><?php echo ++$no ?></a></td>
                       <td><?php echo $list['kode_penyakit']; ?></td>
@@ -38,11 +43,11 @@
                         <?php $level= $this->session->userdata('level'); 
                                 if($level==1){?>
                       <a href="<?php echo base_url() ?>back/penyakit/edit/<?php echo $list['id_penyakit'] ?>"><label class="btn btn-info btn-sm" >edit</a> &nbsp 
-                      <a href="<?php echo base_url() ?>back/penyakit/delete/<?php echo $list['id_penyakit'] ?>"><label class="btn btn-danger btn-sm delete" >delete</a> &nbsp <?php } ?>
+                      <a href="<?php echo base_url() ?>back/penyakit/delete/<?php echo $list['id_penyakit'] ?>"onclick="return confirm ('Apakah Anda yakin akan menghapus data ini ?')"><label class="btn btn-danger btn-sm delete" >delete</a> &nbsp <?php } ?>
                       <a href="<?php echo base_url() ?>back/penyakit/detail/<?php echo $list['id_penyakit'] ?>"><label class="btn btn-warning btn-sm" >detail</a>&nbsp
                       </td>
                     </tr>
-                    <?php } ?>
+                    <?php } }?>
                     <?php echo $this->session->flashdata('pesan'); ?>
                     
                     

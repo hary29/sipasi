@@ -48,15 +48,17 @@ class M_penyakit extends CI_Model {
     	$query = $this->db->get('tb_penyakit',$num,$offset);
     	if($query->num_rows() > 0) {
         $results = $query->result_array();
+        return $results;
     	}
-    	return $results;
+    	//return $results;
 	}
 	public function daftar_penyakit1() {
     	$query = $this->db->get('tb_penyakit');
     	if($query->num_rows() > 0) {
         $results = $query->result_array();
+        return $results;
     	}
-    	return $results;
+    	//return $results;
 	}
 
   // Fungsi pencarian

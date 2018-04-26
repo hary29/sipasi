@@ -28,7 +28,7 @@ class M_user extends CI_Model {
     	if($query->num_rows() > 0) {
         $results = $query->result_array();
     	}
-    	return $results;
+    	//return $results;
 	}
 	
 	// Model untuk menambah data kelas

@@ -33,6 +33,10 @@
                       <th width="5%" scope="col">Aksi</th>
                     </tr>
                     <?php 
+                    if (empty($bobot)) {?>
+                            <div style="color:#0000FF"> <label for="aa" class="col-sm-4">
+                                        <h3><b>Data Bobot Kosong</b></h3></label></div>
+                             <?php }  else {
                       $no = $offset;
                     foreach($bobot as $list) { ?>
                     <tr>
@@ -45,7 +49,7 @@
                       <a href="<?php echo base_url() ?>back/bobot/delete/<?php echo $list['id_bobot'] ?>"onclick="return confirm ('Apakah Anda yakin akan menghapus data ini ?')"><label class="btn btn-danger btn-sm delete" >delete</a> &nbsp
                       </td>
                     </tr>
-                    <?php } ?>
+                    <?php } }?>
                     <?php echo $this->session->flashdata('pesan'); ?>
                     
                     

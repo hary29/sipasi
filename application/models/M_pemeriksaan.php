@@ -16,7 +16,7 @@ class M_pemeriksaan extends CI_Model{
     return $this->db->get('tb_sapi');
   }
 
-  public function get_dog_user($id) 
+  public function get_sapi_user($id) 
   {
     $this->db->select('*');
     $this->db->where('id_user',$id);

@@ -11,7 +11,7 @@ if($level==1){?>
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
                         <li> <a class="has-arrow  " href="<?php echo base_url() ?>back/home_back" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-primary pull-right"></span></span></a>
-                             <ul aria-expanded="false" class="collapse">
+                             <!-- <ul aria-expanded="false" class="collapse"> -->
                            <!--  <ul aria-expanded="false" class="collapse">
                                <li><a href="index.html">Ecommerce </a></li>
                                <li><a href="index1.html">Analytics </a></li>
@@ -123,7 +123,7 @@ if($level==1){?>
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a class="has-arrow  " href="<?php echo base_url() ?>back/home_back" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-primary pull-right"></span></span></a> <ul aria-expanded="false" class="collapse">
+                        <li> <a class="has-arrow  " href="<?php echo base_url() ?>back/home_back" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-primary pull-right"></span></span></a> <!-- <ul aria-expanded="false" class="collapse"> -->
                            <!--  <ul aria-expanded="false" class="collapse">
                                <li><a href="index.html">Ecommerce </a></li>
                                <li><a href="index1.html">Analytics </a></li>
@@ -140,7 +140,7 @@ if($level==1){?>
                         </li>
                          <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="ti-comments-smiley"></i><span class="hide-menu">Registrasi</span></a>
                             <ul aria-expanded="false" class="collapse">
-                            <li> <a href="<?php echo base_url() ?>back/register/sapi_user">Register Sapi</a> </li>
+                            <li> <a href="<?php echo base_url() ?>back/register">Register Sapi</a> </li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bar-chart"></i><span class="hide-menu">Pemeriksaan</span></a>

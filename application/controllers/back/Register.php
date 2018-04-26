@@ -86,15 +86,15 @@ class Register extends CI_Controller {
 			$this->session->set_flashdata('sukses', "<div class=\"alert alert-danger\" id=\"alert\"><i class=\"\"><strong>error!</strong><br></i> silahkan pilih user dan inputkan tanggal lahir</div>");
 	redirect('back/register');
 		}else{
-	$data_anjing = array(
-			'kode_anjing' => $this->input->post('kode_sapi'),
-			'nama_anjing' => $this->input->post('nama_sapi'),
+	$data_sapi = array(
+			'kode_sapi' => $this->input->post('kode_sapi'),
+			'nama_sapi' => $this->input->post('nama_sapi'),
 			'tanggal_lahir' => $this->input->post('tanggal_lahir'),
 			'id_user' => $this->input->post('id_user')
 			);
 //print_r($data_user);exit;
 	$this->M_sapi->tambah($data_sapi);
-	$this->session->set_flashdata('sukses', "<div class=\"alert alert-success\" id=\"alert\"><i class=\"\"></i> Registrasi data sapi berhasil</div>");
+	$this->session->set_flashdata('sukses', "<div class=\"alert alert-info\" id=\"alert\"><i class=\"\"></i> Registrasi data sapi berhasil</div>");
 	redirect('back/register');}}
 	
 	else {
@@ -107,15 +107,15 @@ class Register extends CI_Controller {
 		}else {
 			//print_r($_POST);exit;
 		
-	$data_anjing = array(
-			'kode_anjing' => $this->input->post('kode_sapi'),
-			'nama_anjing' => $this->input->post('nama_sapi'),
+	$data_sapi= array(
+			'kode_sapi' => $this->input->post('kode_sapi'),
+			'nama_sapi' => $this->input->post('nama_sapi'),
 			'tanggal_lahir' => $this->input->post('tanggal_lahir'),
 			'id_user' => $id
 			);
 //print_r($data_user);exit;
-	$this->M_sapi->tambah($data_anjing);
-	$this->session->set_flashdata('sukses', "<div class=\"alert alert-success\" id=\"alert\"><i class=\"\"></i> Registrasi data sapi berhasil</div>");
+	$this->M_sapi->tambah($data_sapi);
+	$this->session->set_flashdata('sukses', "<div class=\"alert alert-info\" id=\"alert\"><i class=\"\"></i> Registrasi data sapi berhasil</div>");
 	redirect('back/register');}}
 	}
 
@@ -129,30 +129,30 @@ class Register extends CI_Controller {
 			$this->session->set_flashdata('sukses', "<div class=\"alert alert-danger\" id=\"alert\"><i class=\"\"><strong>error!</strong><br></i> silahkan pilih user</div>");
 	redirect('back/pemeriksaan');
 		}else{
-	$data_anjing = array(
-			'kode_anjing' => $this->input->post('kode_sapi'),
-			'nama_anjing' => $this->input->post('nama_sapi'),
+	$data_sapi = array(
+			'kode_sapi' => $this->input->post('kode_sapi'),
+			'nama_sapi' => $this->input->post('nama_sapi'),
 			'tanggal_lahir' => $this->input->post('tanggal_lahir'),
 			'id_user' => $this->input->post('id_user')
 			);
 //print_r($data_user);exit;
 	$this->M_sapi->tambah($data_sapi);
-	$this->session->set_flashdata('sukses', "<div class=\"alert alert-success\" id=\"alert\"><i class=\"\"></i> Registrasi data sapi berhasil</div>");
+	$this->session->set_flashdata('sukses', "<div class=\"alert alert-info\" id=\"alert\"><i class=\"\"></i> Registrasi data sapi berhasil</div>");
 	redirect('back/pemeriksaan');}}
 	
 	else {
 		
 			$id= $this->session->userdata('id'); 
 			//print_r($_POST);exit;
-	$data_anjing = array(
-			'kode_anjing' => $this->input->post('kode_sapi'),
-			'nama_anjing' => $this->input->post('nama_sapi'),
+	$data_sapi = array(
+			'kode_sapi' => $this->input->post('kode_sapi'),
+			'nama_sapi' => $this->input->post('nama_sapi'),
 			'tanggal_lahir' => $this->input->post('tanggal_lahir'),
 			'id_user' => $id
 			);
 //print_r($data_user);exit;
 	$this->M_sapi->tambah($data_sapi);
-	$this->session->set_flashdata('sukses', "<div class=\"alert alert-success\" id=\"alert\"><i class=\"\"></i> Registrasi data sapi berhasil</div>");
+	$this->session->set_flashdata('sukses', "<div class=\"alert alert-info\" id=\"alert\"><i class=\"\"></i> Registrasi data sapi berhasil</div>");
 	redirect('back/pemeriksaan');}
 	}
 	public function tambah_user()
@@ -184,7 +184,7 @@ if ($cek > 0){
 			);
 //print_r($data_user);exit;
 	$this->M_user->tambah($data_user);
-	$this->session->set_flashdata('sukses', "<div class=\"alert alert-success\" id=\"alert\"><i class=\"\"></i> Registrasi Berhasil, Silahkan login Untuk melakukan pemeriksaan</div>");
+	$this->session->set_flashdata('sukses', "<div class=\"alert alert-info\" id=\"alert\"><i class=\"\"></i> Registrasi Berhasil, Silahkan login Untuk melakukan pemeriksaan</div>");
 	redirect('back/register/register_user');}}
 
 	

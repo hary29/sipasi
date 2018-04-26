@@ -48,8 +48,9 @@ class M_gejala extends CI_Model {
     	$query = $this->db->get('tb_gejala',$num,$offset);
       if($query->num_rows() > 0) {
         $results = $query->result_array();
+        return $results;
       }
-      return $results;
+      //
 	}
 
   // Fungsi pencarian

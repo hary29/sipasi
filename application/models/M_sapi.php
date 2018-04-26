@@ -26,7 +26,7 @@ class M_sapi extends CI_Model {
     	if($query->num_rows() > 0) {
         $results = $query->result_array();
     	}
-    	return $results;
+    	//return $results;
 	}
 	public function daftar_sapi_user($id) {
 		
@@ -41,15 +41,15 @@ class M_sapi extends CI_Model {
     	return $results;
 	}
 	// Model untuk menambah data kelas
-	public function tambah($data_anjing) {
+	public function tambah($data_sapi) {
 		$data['id_sapi'] = $this->db->insert_id();
-		$this->db->insert('tb_sapi', $data_anjing);
+		$this->db->insert('tb_sapi', $data_sapi);
 	}
 	
 	// Update data kelas
-	public function edit($data_anjing) {
-		$this->db->where('id_sapi', $data_anjing['id_sapi']);
-		return $this->db->update('tb_sapi', $data_anjing);
+	public function edit($data_sapi) {
+		$this->db->where('id_sapi', $data_sapi['id_sapi']);
+		return $this->db->update('tb_sapi', $data_sapi);
 	}
 	
 	// Hapus data siswa

@@ -20,15 +20,19 @@
                         <div class="white-box">
                              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-bordered table-striped">
                     
-                    <tr class="active">
+                    <tr class="active" align="center">
                       <th width="3%" scope="col">No</th>
-                      <th width="5%" scope="col">Kode Gejala</th>
-                      <th width="5%" scope="col">Nama Gejala</th>
+                      <th width="15%" scope="col">Kode Gejala</th>
+                      <th width="15%" scope="col">Nama Gejala</th>
                       <?php $level= $this->session->userdata('level'); 
                                 if($level==1){?>
-                      <th width="5%" scope="col">Aksi</th><?php } ?>
+                      <th width="15%" scope="col">Aksi</th><?php } ?>
                     </tr>
                     <?php 
+                    if (empty($gejala)) {?>
+                            <div style="color:#0000FF"> <label for="aa" class="col-sm-4">
+                                        <h3><b>Data Gejala Kosong</b></h3></label></div>
+                             <?php }  else {
                       $no = $offset;
                     foreach($gejala as $list) { ?>
                     <tr>
@@ -38,10 +42,9 @@
                       <?php $level= $this->session->userdata('level'); 
                                 if($level==1){?>
                       <td>
-                      <a href="<?php echo base_url() ?>back/gejala/edit/<?php echo $list['id_gejala'] ?>"><label class="btn btn-info btn-sm" >edit</a> &nbsp 
-                      <a href="<?php echo base_url() ?>back/gejala/delete/<?php echo $list['id_gejala'] ?>"><label class="btn btn-danger btn-sm delete" >delete</a>
-                      </td><?php } ?>
-                    </tr>
+                      <a href="<?php echo base_url() ?>back/gejala/edit/<?php echo $list['id_gejala'] ?>"><label class="btn btn-info btn-sm" >edit</label></a> &nbsp 
+                      <a href="<?php echo base_url() ?>back/gejala/delete/<?php echo $list['id_gejala'] ?>"><label class="btn btn-danger btn-sm delete" >delete</label></a>
+                      </td><?php } }?></tr>
                     <?php } ?>
                     <?php echo $this->session->flashdata('pesan'); ?>
                     

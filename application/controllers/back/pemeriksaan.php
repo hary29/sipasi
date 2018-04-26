@@ -28,7 +28,7 @@ public function index()
     $id= $this->session->userdata('id');
     //print_r($id);exit;
     $data['priksa']=$this->m_pemeriksaan->liatgejala();
-    $data['dog']=$this->m_pemeriksaan->get_dog_user($id);
+    $data['sapi']=$this->m_pemeriksaan->get_sapi_user($id);
 
     $this->load->view('layout/back/header1',$data);
     $this->load->view('layout/back/sidebar1',$data);
@@ -112,9 +112,9 @@ public function proseshitung_user()
 
 public function simpantmp()
 {
-  //print_r($_POST);exit;
+  //rint_r($_POST);exit;
   $sapi=$this->input->post('id_sapi');
-  if ($sapi ==  "--Pilih Jenis Sapi--"){
+  if ($sapi ==  "--Pilih Nama Sapi--"){
     $this->session->set_flashdata('sukses', "<div class=\"alert alert-danger\" id=\"alert\"><i class=\"\"><strong>error!</strong><br></i> silahkan pilih sapi</div>");
   redirect('back/pemeriksaan');
   }

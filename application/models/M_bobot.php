@@ -33,8 +33,9 @@ class M_bobot extends CI_Model {
       	$query = $this->db->get('',$num,$offset);
     	if($query->num_rows() > 0) {
         $results = $query->result_array();
+        return $results;
     	}
-    	return $results;
+    	//return $results;
 	}
 
   // Fungsi pencarian

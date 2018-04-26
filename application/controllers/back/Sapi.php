@@ -144,7 +144,7 @@ class Sapi extends CI_Controller {
                                 if($level==1){
 		$this->M_sapi->delete($id);
 		$this->session->set_flashdata("pesan", "<div class=\"alert alert-success\" id=\"alert\"><i class=\"glyphicon glyphicon-ok\"></i> Data berhasil dihapus</div>");
-		redirect('back/sapi/sapi_user');
+		redirect('back/sapi');
 	}else {
 		$this->M_sapi->delete($id);
 		$this->session->set_flashdata("pesan", "<div class=\"alert alert-success\" id=\"alert\"><i class=\"glyphicon glyphicon-ok\"></i> Data berhasil dihapus</div>");

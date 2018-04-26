@@ -40,7 +40,11 @@
                                         <tr class="odd gradeX">
                                           <?php 
                             $no = $offset;
-                          foreach($data_sapi as $list) { ?>
+                          foreach($data_sapi as $list) { 
+                            if ($list['id_sapi'] == '') {?>
+                            <div style="color:#0000FF"> <label for="aa" class="col-sm-4">
+                                        <h3><b>Data Sapi Kosong</b></h3></label></div>
+                             <?php }  else {?>
                           <tr>
                             <td><?php echo ++$no ?></a></td>
                             <td><?php echo $list['kode_sapi']; ?></td>
@@ -53,7 +57,7 @@
                             <?php
                         //$level=$this->session->userdata('level');
                         // if($level == 1){?>
-                            <a href="<?php echo base_url() ?>back/sapi/delete/<?php echo $list['id_sapi'] ?>"onclick="return confirm ('Apakah Anda yakin akan menghapus data ini ?')"><label class="btn btn-danger" >DELETE</a><?php } ?></td></label></a></label></a></td></tr>
+                            <a href="<?php echo base_url() ?>back/sapi/delete/<?php echo $list['id_sapi'] ?>"onclick="return confirm ('Apakah Anda yakin akan menghapus data ini ?')"><label class="btn btn-danger" >DELETE</a><?php }} ?></td></label></a></label></a></td></tr>
                           </tr>
 
                           <?php echo $this->session->flashdata('pesan'); ?>
