@@ -39,7 +39,14 @@
                                       <div class="col-md-4 col-sm-5 col-xs-12">
                                       <div class="white-box">
                                       <h4>Hitung Nilai Semesta</h4>
-                                      <table class="table">
+                                      <table class="table table-bordered">
+                                      <thead>
+                                      <tr>
+                                      <th>No</th>
+                                      <th>Gejala</th>
+                                      <th>Bobot</th>
+                                      </tr>
+                                      </thead>
                                       <?php 
                                       $gejala=$this->m_pemeriksaan->ambilsemuagejala($id_penyakit);
                                       $no=0; $hitungsemesta=0;
@@ -59,7 +66,7 @@
                                       }?>
                                         </table>
 
-                                      <h5><b>Maka Nilai Semestanya Adalah = <?php echo $hitungsemesta;?></h5></b>
+                                      <h5><b>Maka Nilai Semestanya Adalah = <?php echo $hitungsemesta;?></h5></b><br>
                                       
                                       </div>
                                       </div>
@@ -68,7 +75,15 @@
                                       <div class="white-box">
 
                                       <h4>Nilai Semesta P(Hi)</h4> 
-                                      <table class="table">
+                                      <table class="table table-bordered">
+                                      <thead>
+                                      <tr>
+                                      <th>No</th>
+                                      <th>Gejala</th>
+                                      <th>Perhitungan</th>
+                                      <th>Hasil</th>
+                                      </tr>
+                                      </thead>
                                       <?php
                                       $gejala=$this->m_pemeriksaan->ambilsemuagejala($id_penyakit);
                                       $nilaibayes=0;
@@ -81,7 +96,7 @@
                                         <td><?php echo $no; ?></td>
                                         <td><?php echo $row->gejala; ?></td>
                                         <td><?php echo $row->bobot; ?> / <?php echo $hitungsemesta; ?></td>
-                                        <td>= <?php echo $nilaibagi=$row->bobot/$hitungsemesta; ?></td>
+                                        <td><?php echo $nilaibagi=$row->bobot/$hitungsemesta; ?></td>
                                         </tr>
                                         </tbody>
                                         
@@ -98,19 +113,28 @@
                                       <div class="white-box">
 
                                       <h4>Probabilitas H tanpa memandang nilai apapun</h4> 
-                                      <table class="table">
+                                      <table class="table table-bordered">
+                                      <thead>
+                                      <tr>
+                                      <th>No</th>
+                                      <th>Gejala</th>
+                                      <th>Perhitungan</th>
+                                      <th>Hasil</th>
+                                      </tr>
+                                      </thead>
                                       <?php  
                                       $gejala=$this->m_pemeriksaan->ambilsemuagejala($id_penyakit);
                                       $nilaibayes=0;
                                       $no=0; $nilaitotalprobabilitas=0;
                                       foreach ($gejala->result() as $row ) {
                                       $no++;?>
+
                                       <tbody>
                                         <tr>
-                                        <td><?php echo $no; ?><td>
+                                        <td><?php echo $no; ?></td>
                                         <td><?php echo $row->gejala; ?></td>
-                                        <td><?php echo $nilaibagi=$row->bobot/$hitungsemesta; ?> x <?php echo $row->bobot; ?> </td>
-                                        <td>= <?php echo $nilaiprobabilitas=$nilaibagi*$row->bobot; ?></td>
+                                        <td><?php echo $nilaibagi=$row->bobot/$hitungsemesta; ?> x <?php echo $row->bobot; ?></td>
+                                        <td><?php echo $nilaiprobabilitas=$nilaibagi*$row->bobot; ?></td>
                                         </tr>
                                       </tbody>
                                       <?php
@@ -125,11 +149,20 @@
                                       
                                       </div>
                                       </div>
+
                                       
                                       <div class="col-md-4 col-sm-12 col-xs-12">
                                       <div class="white-box">
                                       <h4>Mencari nilai P(Hi|E)</h4>
-                                      <table class="table">
+                                      <table class="table table-bordered">
+                                      <thead>
+                                      <tr>
+                                      <th>No</th>
+                                      <th>Gejala</th>
+                                      <th>Perhitungan</th>
+                                      <th>Hasil</th>
+                                      </tr>
+                                      </thead>
                                       <?php  
                                       $gejala=$this->m_pemeriksaan->ambilgejalapenyakit($id_penyakit);
                                       // print_r($gejala->result());
@@ -140,10 +173,10 @@
                                       $no++; ?>
                                       <tbody>
                                         <tr>
-                                        <td><?php echo $no; ?><td>
+                                        <td><?php echo $no; ?></td>
                                         <td><?php echo $row->gejala; ?></td>
-                                        <td><?php echo $row->bobot; ?> x <?php echo $ambilphi=$row->bobot/$hitungsemesta;?> / <?php echo $nilaitotalprobabilitas; ?> </td>
-                                        <td>= <?php echo $hasiltb=$row->bobot*$ambilphi/$nilaitotalprobabilitas; ?></td>
+                                        <td><?php echo $row->bobot; ?> x <?php echo $ambilphi=$row->bobot/$hitungsemesta;?> / <?php echo $nilaitotalprobabilitas; ?></td>
+                                        <td><?php echo $hasiltb=$row->bobot*$ambilphi/$nilaitotalprobabilitas; ?></td>
                                         </tr>
                                       </tbody>
                                       <?php 
@@ -151,15 +184,12 @@
 
                                       } ?>
                                       </table>
-                                      <?php
-
-                                      echo'<p>'; echo'Nilai Bayes : '; echo $hasilbayes=round($hasilbayes,1);
-                                      ?>
-                                      
                                       </div>
                                       </div>
                                       </div>
-                                      
+                                      <hr>
+                                      <h4><b><p class="text-danger" align="center">Nilai Bayes <?php echo $row->nama_penyakit; ?> = <?php echo $hasilbayes=round($hasilbayes,1);?></h4></b></p>
+                                      <hr><br>
                                        <?php
                                       $bayes=$this->m_pemeriksaan->ambilnilaibayes();
                                       $teorema_bayes=0;
