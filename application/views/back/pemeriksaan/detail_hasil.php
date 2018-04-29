@@ -29,12 +29,12 @@
                                       <th><?php echo $row->nama; ?></th>
                                     </tr>
                                     <tr>
-                                      <td>Nama Anjing</td>
+                                      <td>Nama Sapi</td>
                                       <td>:</td>
                                       <th><?php echo $row->nama_sapi; ?></th>
                                     </tr>
                                      <tr>
-                                      <td>Usia Anjing</td>
+                                      <td>Usia Saoi</td>
                                       <td>:</td>
                                       <th><?php echo $row->usia; ?></th>
                                     </tr>

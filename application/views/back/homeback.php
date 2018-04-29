@@ -27,7 +27,7 @@
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
+                                    <span><i class="fa fa-user f-s-40 color-primary"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
                                     <h2><?php echo $user;?></h2>
@@ -66,7 +66,7 @@
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-user f-s-40 color-danger"></i></span>
+                                    <span><i class="ti-settings f-s-40 color-danger"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
                                     <h2><?php echo $penyakit;?></h2>
@@ -259,7 +259,7 @@
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
+                                    <span><i class="fa fa-user f-s-40 color-primary"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
                                     <h2><?php echo $sapi;?></h2>
@@ -285,7 +285,7 @@
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-archive f-s-40 color-warning"></i></span>
+                                    <span><i class="ti-settings f-s-40 color-warning"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
                                     <h2><?php echo $penyakit;?></h2>
@@ -298,7 +298,7 @@
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-user f-s-40 color-danger"></i></span>
+                                    <span><i class="ti-settings f-s-40 color-danger"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
                                     <h2><?php echo $gejala;?></h2>

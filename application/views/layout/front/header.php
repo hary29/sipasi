@@ -7,7 +7,7 @@
 		<!--<![endif]-->
 		<head>
 				<!-- Title -->
-				<title>sipasi</title>
+				<title>Sistem Pakar</title>
 				<!-- Meta -->
 				<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 				<meta name="description" content="">
@@ -144,9 +144,9 @@
 																		<li>
 																				<a href="<?php echo base_url() ?>front/about"  class="fa-th">Penyakit</a>
 																		</li>
-																		<li>
+																		<!-- <li>
 																				<a href="<?php echo base_url() ?>front/contact" class="fa-comment ">Contact</a>
-																		</li>
+																		</li> -->
 																		<li>
 																				<span class="fa-user ">User</span>
 																				<ul>

@@ -102,7 +102,7 @@ class Register extends CI_Controller {
 			$id= $this->session->userdata('id'); 
 			$this->form_validation->set_rules('tanggal_lahir','tanggal_lahir','required');
 		if($this->form_validation->run() == false){
-			$this->session->set_flashdata('sukses', "<div class=\"alert alert-danger\" id=\"alert\"><i class=\"\"><strong>error!</strong><br></i> silahkan pilih user dan inputkan tanggal lahir</div>");
+			$this->session->set_flashdata('sukses', "<div class=\"alert alert-danger\" id=\"alert\"><i class=\"\"><strong>error!</strong><br></i> silahkan inputkan tanggal lahir</div>");
 	redirect('back/register');
 		}else {
 			//print_r($_POST);exit;

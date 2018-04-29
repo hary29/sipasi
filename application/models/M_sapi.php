@@ -25,6 +25,7 @@ class M_sapi extends CI_Model {
     	$query = $this->db->get('tb_sapi',$num, $offset);
     	if($query->num_rows() > 0) {
         $results = $query->result_array();
+        return $results;
     	}
     	//return $results;
 	}

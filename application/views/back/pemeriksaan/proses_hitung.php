@@ -54,6 +54,7 @@
                                         </tbody>
                                        
                                        <?php
+                                       //runus
                                         $hitungsemesta=$hitungsemesta+$bobot;
 
                                       }?>
@@ -114,7 +115,7 @@
                                         </tr>
                                       </tbody>
                                       <?php
-
+                                        //rumus
                                         $nilaitotalprobabilitas=$nilaitotalprobabilitas+$nilaiprobabilitas;
                                         $nilaibayes=$nilaibayes+$nilaibagi;
 

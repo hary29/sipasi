@@ -89,11 +89,11 @@
 				</div>
 			</div>
 			<!-- Portfolio -->
-			<div id="portfolio" class="bottom-border-shadow">
+			<!-- <div id="portfolio" class="bottom-border-shadow">
 				<div class="container bottom-border">
 					<div class="row padding-top-40">
 						<ul class="portfolio-group">
-							<!-- Portfolio Item -->
+							Portfolio Item
 							<li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
 								<a href="#">
 									<figure class="animate fadeInLeft">
@@ -105,8 +105,8 @@
 									</figure>
 								</a>
 							</li>
-							<!-- //Portfolio Item// -->
-							<!-- Portfolio Item -->
+							//Portfolio Item//
+							Portfolio Item
 							<li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
 								<a href="#">
 									<figure class="animate fadeIn">
@@ -118,8 +118,8 @@
 									</figure>
 								</a>
 							</li>
-							<!-- //Portfolio Item// -->
-							<!-- Portfolio Item -->
+							//Portfolio Item//
+							Portfolio Item
 							<li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
 								<a href="#">
 									<figure class="animate fadeInRight">
@@ -131,8 +131,8 @@
 									</figure>
 								</a>
 							</li>
-							<!-- //Portfolio Item// -->
-							<!-- Portfolio Item -->
+							//Portfolio Item//
+							Portfolio Item
 							<li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
 								<a href="#">
 									<figure class="animate fadeInLeft">
@@ -144,8 +144,8 @@
 									</figure>
 								</a>
 							</li>
-							<!-- //Portfolio Item// -->
-							<!-- Portfolio Item -->
+							//Portfolio Item//
+							Portfolio Item
 							<li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
 								<a href="#">
 									<figure class="animate fadeIn">
@@ -157,8 +157,8 @@
 									</figure>
 								</a>
 							</li>
-							<!-- //Portfolio Item// -->
-							<!-- Portfolio Item -->
+							//Portfolio Item//
+							Portfolio Item
 							<li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
 								<a href="#">
 									<figure class="animate fadeInRight">
@@ -170,11 +170,11 @@
 									</figure>
 								</a>
 							</li>
-							<!-- //Portfolio Item// -->
+							//Portfolio Item//
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- End Portfolio -->
 			<!-- === END CONTENT === -->
 			
