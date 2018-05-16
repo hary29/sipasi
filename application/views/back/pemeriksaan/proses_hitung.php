@@ -152,7 +152,7 @@
                                       </div>
 
                                       
-                                      <div class="col-md-4 col-sm-12 col-xs-12">
+                                      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                                       <div class="white-box">
                                       <h4>Mencari nilai P(Hi|E)</h4>
                                       <table class="table table-bordered">

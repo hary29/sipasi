@@ -32,7 +32,7 @@
                                           <th >Kode Sapi</th>
                                           <th >Nama</th>
                                           <th >Nama Pemilik</th>
-                                          <th >Tanggal Lahir</th>
+                                          <th >Tanggal Lahir Sapi</th>
                                           <th >Aksi</th>
                                         </tr>
                                       </thead>

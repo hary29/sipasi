@@ -51,7 +51,7 @@
                                                 
                                        <?php } ?>
                                       <div class="form-group">
-              <label for="Tanggal Lahir">Tanggal Lahir</label>
+              <label for="Tanggal Lahir">Tanggal Lahir Sapi</label>
               
 
               <div class="date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">

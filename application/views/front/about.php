@@ -19,7 +19,10 @@
 									<!-- End Title -->
 									<!-- Date -->
 									<div class="blog-post-date">
-										<a href="#">22nd Apr, 2014</a>
+										<a href="#"><?php
+											$tgl=date('l, d-m-Y');
+											echo $tgl;
+											?></a>
 									</div>
 									<!-- End Date -->
 								</div>
@@ -56,13 +59,13 @@
 									<div class="clearfix"></div>
 									<div class="blog-post-body row margin-top-15">
 										<div class="col-md-5">
-											<img class="margin-bottom-20" src="assets/img/blog/image1.jpg" alt="thumb1">
+											<img class="margin-bottom-20" src="<?php echo base_url() ?>asset/front/img/blog/cow_sick.png" alt="thumb1">
 										</div>
 										<div class="col-md-7">
 											<p><?php echo $list['definisi']; ?></p>
 											<!-- Read More -->
 											<a href="#" class="btn btn-primary">
-												Read More
+												<?php echo $list['nama_penyakit']; ?>
 												<i class="icon-chevron-right readmore-icon"></i>
 											</a>
 											<!-- End Read More -->
@@ -112,7 +115,10 @@
 											<a href="#" class="posts-list-title"><?php echo $list['nama_penyakit']; ?></a>
 											<br>
 											<span class="recent-post-date">
-												July 30, 2013
+												<?php
+													$tgl=date('l, d-m-Y');
+													echo $tgl;
+													?>
 											</span>
 										</div>
 										<div class="clearfix"></div>

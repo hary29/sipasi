@@ -63,7 +63,7 @@
                                            <label for="jenis_sapi">Jenis anjing</label>
                                            <input type="text" class="form-control" name="jenis_sapi" id="jenis_sapi" placeholder="Enter jenis Sapi"  value="<?php echo $list['jenis_sapi']; ?>"></div>
                                                                             <div class="form-group"> -->
-              <label for="Tanggal Lahir">Tanggal Lahir</label>
+              <label for="Tanggal Lahir">Tanggal Lahir Sapi</label>
               
 
               <div class="date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="<?php echo base_url() ?>asset/back/baru/image/png" sizes="16x16" href="<?php echo base_url() ?>asset/back/baru/images/favicon.png">
+    <link rel="icon" type="<?php echo base_url() ?>asset/front/img/sapi.png" sizes="16x16" href="<?php echo base_url() ?>asset/front/img/sapi.png">
     <title>Sistem Pakar Sapi</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url() ?>asset/back/baru/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">

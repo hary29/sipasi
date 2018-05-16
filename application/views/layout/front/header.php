@@ -14,7 +14,7 @@
 				<meta name="author" content="">
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 				<!-- Favicon -->
-			<!-- 	<link href="favicon.ico" rel="shortcut icon"> -->
+				<link href="<?php echo base_url() ?>asset/front/img/sapi.png" rel="shortcut icon">
 				<!-- Bootstrap Core CSS -->
 				<link rel="stylesheet" href="<?php echo base_url() ?>asset/front/css/bootstrap.css" rel="stylesheet">
 				<!-- Template CSS -->
